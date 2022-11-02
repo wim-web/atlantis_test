@@ -7,9 +7,9 @@ workflows:
   custom:
     plan:
       steps:
-        - run: echo ```
+        - run: echo '```'
         - run: echo hello
-        - run: echo ```
+        - run: echo '```'
     apply:
       steps:
         - run: echo hello-2
