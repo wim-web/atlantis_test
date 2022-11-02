@@ -1,0 +1,12 @@
+version: 3
+projects:
+  - dir: terraform/sample
+    workflow: custom
+workflows:
+  custom:
+    plan:
+      steps:
+        - run: echo hello
+    apply:
+      steps:
+        - run: echo hello-2
