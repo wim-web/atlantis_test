@@ -7,8 +7,9 @@ workflows:
   custom:
     plan:
       steps:
-        - run: touch dummy.tfplan
+        - run: echo ```
         - run: echo hello
+        - run: echo ```
     apply:
       steps:
         - run: echo hello-2
