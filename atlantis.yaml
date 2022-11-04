@@ -1,0 +1,16 @@
+version: 3
+projects:
+  - name: test
+    dir: terraform/environments/test
+  - name: test2
+    dir: terraform/environments/test
+workflows:
+  custom:
+    plan:
+      steps:
+        - run: echo '```'
+
+        - run: echo '```'
+    apply:
+      steps:
+        - run: echo hello-2
