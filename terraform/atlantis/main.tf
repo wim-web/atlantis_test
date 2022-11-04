@@ -27,6 +27,8 @@ module "atlantis" {
   atlantis_github_webhook_secret = var.webhook_secret
 
   allow_unauthenticated_access = true
+
+  atlantis_image = "477235943564.dkr.ecr.ap-northeast-1.amazonaws.com/atlantis:latest"
 }
 
 variable "pat" {
@@ -34,5 +36,5 @@ variable "pat" {
 }
 
 variable "webhook_secret" {
-  type        = string
+  type = string
 }
